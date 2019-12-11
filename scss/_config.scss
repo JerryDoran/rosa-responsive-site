@@ -40,3 +40,45 @@ p {
   margin: 0 auto;
   padding: 0 2.4rem;
 }
+
+.sub-headline {
+  font-size: 8.5rem;
+  font-family: $secondary-font;
+  color: $secondary-font-color;
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+}
+
+.headline {
+  color: $main-white;
+  font-size: 3.7rem;
+  font-family: $main-font;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: -2px;
+}
+
+.global-headline {
+  text-align: center;
+  margin-top: 3.9rem;
+}
+
+.asterisk {
+  font-size: 1.2rem;
+  color: $secondary-font-color;
+  margin: 0 1.6rem;
+}
+
+.between {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+}
