@@ -273,3 +273,100 @@ header {
     url('/dist/images/perfect-blend.jpg') center no-repeat;
   background-size: cover;
 }
+
+// CULINARY DELIGHT
+
+.culinary-delight {
+  .restaurant-description {
+    padding-top: 3rem;
+    margin-bottom: 0rem;
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 2.4rem;
+    }
+
+    .asterisk {
+      color: $body-font-color;
+      margin: 2.4rem 0;
+    }
+  }
+
+  .body-btn {
+    font-size: 1.5rem;
+    color: $secondary-font-color;
+    position: relative;
+    transition: color 500ms;
+    margin-bottom: 4rem;
+  }
+}
+
+// FOOTER SECTION
+footer {
+  padding: 7.9rem;
+  background-color: #121212;
+  color: $main-white;
+  text-align: center;
+  position: relative;
+
+  .back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+
+    i {
+      display: block;
+      color: $main-white;
+      font-size: 2rem;
+      padding: 2rem;
+    }
+  }
+
+  .footer-content {
+    // overflow: hidden;
+
+    h4 {
+      font-size: 1.9rem;
+      text-transform: uppercase;
+      font-weight: 100;
+      letter-spacing: 3px;
+      margin-bottom: 3rem;
+    }
+
+    .footer-content-about {
+      margin-bottom: 5.4rem;
+
+      p {
+        line-height: 2;
+      }
+    }
+    .asterisk {
+      margin: 2.4rem 0;
+    }
+  }
+
+  .social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+
+    i {
+      font-size: 3rem;
+      color: $main-white;
+      padding: 0.8rem 2rem;
+      opacity: 0.5;
+      transition: color 500ms;
+
+      &:hover,
+      &:focus {
+        color: darken($secondary-font-color, 5%);
+      }
+    }
+  }
+}
