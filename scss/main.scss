@@ -105,7 +105,8 @@ header {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(/dist/images/hero.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/dist/images/hero.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -303,7 +304,7 @@ header {
 
 // FOOTER SECTION
 footer {
-  padding: 7.9rem;
+  padding: 5.9rem;
   background-color: #121212;
   color: $main-white;
   text-align: center;
@@ -329,25 +330,25 @@ footer {
 
   .footer-content {
     // overflow: hidden;
+  }
 
-    h4 {
-      font-size: 1.9rem;
-      text-transform: uppercase;
-      font-weight: 100;
-      letter-spacing: 3px;
-      margin-bottom: 3rem;
-    }
+  h4 {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+  }
 
-    .footer-content-about {
-      margin-bottom: 5.4rem;
+  .footer-content-about {
+    margin-bottom: 5.4rem;
 
-      p {
-        line-height: 2;
-      }
+    p {
+      line-height: 2;
     }
-    .asterisk {
-      margin: 2.4rem 0;
-    }
+  }
+  .asterisk {
+    margin: 2.4rem 0;
   }
 
   .social-icons {
@@ -367,6 +368,168 @@ footer {
       &:focus {
         color: darken($secondary-font-color, 5%);
       }
+    }
+  }
+
+  .newsletter-form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    max-width: 30rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+  }
+
+  .newsletter-btn {
+    background-color: transparent;
+    border: none;
+    color: $main-font-color-dark;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px 6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 12.5rem;
+  }
+}
+
+// MEDIA QUERIES
+@media screen and(min-width: 900px) {
+  section {
+    padding: 7.9rem;
+  }
+
+  header {
+    .menu-toggle {
+      display: none;
+    }
+
+    .nav {
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      position: initial;
+      width: initial;
+      height: initial;
+      background-color: transparent;
+      padding: 0;
+      justify-content: initial;
+      flex-direction: row;
+      transform: initial;
+      transition: initial;
+    }
+
+    .nav-item {
+      margin: 0 2.4rem;
+      border: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .nav-link {
+      font-size: 1.3rem;
+
+      &:hover {
+        padding: 0;
+      }
+    }
+
+    .active {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $secondary-font-color;
+        left: 0;
+        bottom: -4px;
+      }
+    }
+  }
+
+  .sub-headline {
+    font-size: 10rem;
+  }
+
+  .hero {
+    .first-letter {
+      font-size: 12.2rem;
+    }
+
+    .line {
+      max-width: 11.4rem;
+    }
+  }
+
+  .first-letter {
+    font-size: 12.2rem;
+  }
+
+  .headline {
+    font-size: 4.7rem;
+  }
+
+  .restaurant-info {
+    display: flex;
+    align-items: center;
+  }
+
+  // Will make all the divs inside this container the same size
+  .restaurant-info > div {
+    flex: 1;
+  }
+
+  .padding-right {
+    padding-right: 7rem;
+  }
+  .footer-content {
+    max-width: 77.5rem;
+    margin: auto;
+  }
+
+  .footer-content-about {
+    max-width: 51.3rem;
+    margin: 0 auto 5.4rem;
+  }
+
+  .footer-content-divider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-media,
+  .newsletter-form {
+    width: 100%;
+    max-width: 30.3rem;
+    margin: 0 1rem;
+  }
+
+  .social-icons i {
+    opacity: 1;
+  }
+
+  footer {
+    padding-bottom: 2rem;
+    // margin-bottom: 2rem;
+
+    .newsletter-btn {
+      margin-left: 12.5rem;
+    }
+
+    .newsletter-input {
+      width: 100rem;
+      max-width: 30rem;
     }
   }
 }
