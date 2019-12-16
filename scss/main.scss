@@ -129,6 +129,9 @@ header {
     height: 0.25rem;
     background-color: $main-white;
     position: relative;
+    opacity: 0;
+    animation: grow 2000ms forwards;
+    animation-delay: 900ms;
   }
 
   .line-right::before,
@@ -138,6 +141,9 @@ header {
     top: 50%;
     transform: translateY(-50%);
     border: 0.6rem solid transparent;
+    opacity: 0;
+    animation: grow 500ms forwards;
+    animation-delay: 1200ms;
   }
 
   .line-right::before {
@@ -158,6 +164,12 @@ header {
     margin-bottom: 1.2rem;
     letter-spacing: 3px;
     margin-right: -3px;
+  }
+
+  .single-animation {
+    opacity: 0;
+    animation: fadeDown 500ms forwards;
+    animation-delay: 1500ms;
   }
 
   .cta-btn {
@@ -325,11 +337,12 @@ footer {
       color: $main-white;
       font-size: 2rem;
       padding: 2rem;
+      animation: up 2000ms infinite;
     }
   }
 
   .footer-content {
-    // overflow: hidden;
+    overflow: hidden;
   }
 
   h4 {
@@ -531,5 +544,69 @@ footer {
       width: 100rem;
       max-width: 30rem;
     }
+  }
+}
+
+// ANIMATIONS
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1rem);
   }
 }

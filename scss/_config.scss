@@ -17,8 +17,13 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   padding: 3.9rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -48,6 +53,9 @@ p {
   font-weight: 100;
   line-height: 0.4;
   letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeUp 500ms forwards;
+  animation-delay: 500ms;
 }
 
 .headline {
@@ -57,6 +65,7 @@ p {
   font-weight: 900;
   letter-spacing: 0.5rem;
   margin-right: -0.5rem;
+  animation: scale 500ms forwards;
 }
 
 .btn {
@@ -75,6 +84,9 @@ p {
   font-size: 1.2rem;
   color: $secondary-font-color;
   margin: 0 1.6rem;
+  opacity: 0;
+  animation: spin 500ms forwards;
+  animation-delay: 700ms;
 }
 
 .between {
