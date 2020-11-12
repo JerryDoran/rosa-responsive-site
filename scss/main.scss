@@ -42,7 +42,8 @@ header {
     flex-direction: column;
     justify-content: space-around;
     z-index: 1250;
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateX(-200%);
     transition: transform 500ms;
   }
 
@@ -94,6 +95,7 @@ header {
 
 .open .nav-list {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .open .nav::before {
@@ -437,6 +439,7 @@ footer {
       flex-direction: row;
       transform: initial;
       transition: initial;
+      opacity: 1;
     }
 
     .nav-item {
