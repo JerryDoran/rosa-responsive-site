@@ -19,9 +19,12 @@ header {
 
     .menu-toggle {
       color: $main-white;
-      font-size: 2.2rem;
-      position: absolute;
-      top: 50%;
+      font-size: 2.4rem;
+      background-color: #777;
+      padding: 5px 10px;
+      border-radius: 5px;
+      position: fixed;
+      top: 50px;
       transform: translateY(-50%);
       right: 2.5rem;
       cursor: pointer;
@@ -43,8 +46,8 @@ header {
     justify-content: space-around;
     z-index: 1250;
     opacity: 0;
-    transform: translateX(-200%);
-    transition: transform 500ms;
+    transform: translateX(-100%);
+    transition: all 500ms;
   }
 
   .fa-times {
