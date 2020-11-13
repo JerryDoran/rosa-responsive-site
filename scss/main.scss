@@ -111,7 +111,7 @@ header {
   width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/dist/images/hero.jpg) center no-repeat;
+    url(images/hero.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -257,7 +257,7 @@ header {
 // TASTEFUL RECIPES
 .tasteful-recipes {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/dist/images/tasteful-recipes.jpg') center no-repeat;
+    url(images/tasteful-recipes.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -288,7 +288,7 @@ header {
 // THE PERFECT BLEND SECTION
 .perfect-blend {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/dist/images/perfect-blend.jpg') center no-repeat;
+    url(images/perfect-blend.jpg) center no-repeat;
   background-size: cover;
 }
 
