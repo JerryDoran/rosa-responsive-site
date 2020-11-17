@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1, 
+    "category": "starter", 
+    "title": "Hot peppers in oil", 
+    "desc": "served with bread", 
+    "price": 8
+  },
+  {
+    "id": 2, 
+    "category": "starter", 
+    "title": "Italian Fried Greens", 
+    "desc": "with roasted hot peppers", 
+    "price": 10
+  },
+  {
+    "id": 3, 
+    "category": "starter", 
+    "title": "Jumbo Shrimp Cocktail", 
+    "desc": "with traditional cocktail sauce",
+     "price": 14
+  },
+  {
+    "id": 4, 
+    "category": "starter", 
+    "title": "Lollipop Lamb Chops", 
+    "desc": "with a sweet vermouth demi glaze",
+     "price": 16
+  },
+  {
+    "id": 5, 
+    "category": "soups & salads", 
+    "title": "wedding soup", 
+    "desc": "Cup",
+     "price": 5
+  },
+  {
+    "id": 6, 
+    "category": "soups & salads", 
+    "title": "caesar salad", 
+    "desc": "romain tossed with parmessan cheese, croutons and caesar dressing",
+     "price": 7
+  },
+  {
+    "id": 7, 
+    "category": "soups & salads", 
+    "title": "grilled romaine salad", 
+    "desc": "chargrilled romaine heart, shaved parmesan, olive oil and grilled meyer lemon",
+     "price": 9
+  },
+  {
+    "id": 8, 
+    "category": "soups & salads", 
+    "title": "the wedge", 
+    "desc": "iceberg, tomato, onion, applewood smoked bacon, and egg with creamy blue cheese dressing",
+     "price": 9
+  },
+  {
+    "id": 9, 
+    "category": "steaks & chops", 
+    "title": "filet mignon", 
+    "desc": "12oz",
+     "price": 36
+  },
+  {
+    "id": 10, 
+    "category": "steaks & chops", 
+    "title": "bershire long bone pork chop", 
+    "desc": "fire-grilled and topped with port wine and blueberry reduction",
+     "price": 25
+  },  
+  {
+    "id": 11, 
+    "category": "steaks & chops", 
+    "title": "Sautéed Veal and Shrimp", 
+    "desc": "with mixed wild mushrooms and marsala wine, topped with smoked gouda cheese",
+     "price": 32
+  },
+  {
+    "id": 12, 
+    "category": "steaks & chops", 
+    "title": "petite filet oscar", 
+    "desc": "with lump crabmeat, asparagus, and hollandaise sauce",
+     "price": 38
+  },
+  {
+    "id": 13, 
+    "category": "favorites", 
+    "title": "blackened chicken breast", 
+    "desc": "served over cheese tortellini with tomato cream sauce ",
+     "price": 28
+  },
+  {
+    "id": 14, 
+    "category": "favorites", 
+    "title": "baked stuffed white fish", 
+    "desc": "with crabmeat stuffing in lemon wine sauce ",
+     "price": 32
+  },
+  {
+    "id": 15, 
+    "category": "favorites", 
+    "title": "tony's award winning garlic chicken", 
+    "desc": "with roasted red pepper, herbs, and garlic served over cappellini",
+     "price": 26
+  },
+  {
+    "id": 16, 
+    "category": "favorites", 
+    "title": "cheese ravioli", 
+    "desc": "tossed with fresh spinach, roasted tomatoes and aglio e olio ",
+     "price": 17
+  }  
+]

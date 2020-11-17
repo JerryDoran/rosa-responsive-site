@@ -40,3 +40,18 @@ sr.reveal('.animate-bottom', {
   distance: '25rem',
   delay: 600
 });
+
+// const getTodos = async () => {
+//   const response = await fetch('data/todos/mario.json');
+
+//   if (response.status !== 200) {
+//     throw new Error('cannot fetch the data');
+//   }
+//   const data = await response.json();
+
+//   return data;
+// };
+
+// getTodos()
+//   .then((data) => console.log('resolved', data))
+//   .catch((err) => console.log('rejected:', err.message));
